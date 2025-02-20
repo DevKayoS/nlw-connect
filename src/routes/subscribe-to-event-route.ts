@@ -15,14 +15,7 @@ export const subscriberToEventRoute: FastifyPluginAsyncZod = async app => {
                 }),
                 response: {
                     201: z.object({
-                        status: z.boolean(),
-                        msg: z.string(),
-                        subscribe: z.object({
-                            id: z.string().uuid(),
-                            name: z.string(),
-                            email: z.string().email(),
-                            createdAt: z.date(),
-                        }),
+                        subscriberId: z.string(),
                     }),
                 },
             },
