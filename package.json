@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup-node"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "fastify-type-provider-zod": "^4.0.2",
     "ioredis": "^5.5.0",
     "postgres": "^3.4.5",
+    "tsup": "^8.3.6",
     "zod": "^3.24.2"
   },
   "devDependencies": {
